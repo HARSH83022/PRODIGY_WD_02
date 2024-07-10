@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.stopwatch {
+  border: 3px solid #4facfe;
+  border-radius: 15px;
+  padding: 20px;
+  background: #fff;
+}
+
+#display {
+  font-size: 3.5em;
+  margin-bottom: 25px;
+  color: #4facfe;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-bottom: 25px;
+}
+
+button {
+  background: #4facfe;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  margin: 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#laps {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#laps li {
+  background: #e0f7fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4facfe;
+  font-size: 1em;
+}
